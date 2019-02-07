@@ -18,7 +18,7 @@ app.use('/api', api);
 // Catch all other routes and return the index file 
 app.get('*', (req, res) => { res.sendFile(path.join(__dirname, 'dist/index.html')); });
 // Get port from environment and store in Express 
-const port = process.env.PORT || '3000'; app.set('port', port);
+const port = process.env.PORT || '3500'; app.set('port', port);
 // Create HTTP server 
 const server = http.createServer(app);
 
